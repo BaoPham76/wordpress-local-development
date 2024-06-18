@@ -23,7 +23,8 @@ pipeline {
                     // Xây dựng và triển khai bằng Docker Compose
                     bat 'docker-compose down'
 
-                    bat 'docker-compse pull'
+
+
                     // Chỉ khởi động lại dịch vụ WordPress
                     bat 'docker-compose up --build'
                 }
