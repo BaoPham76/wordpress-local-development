@@ -13,7 +13,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Lấy mã nguồn từ repository
-                git credentialsId: 'ebbb2b83-c468-470a-9f52-e69950869d7a', url: 'https://github.com/BaoPham76/BShop.git'
+                git credentialsId: 'c336a6bd-f8c4-44ad-b3c2-0d658f70e7a7', url: 'https://github.com/BaoPham76/BShop.git'
             }
         }
 
