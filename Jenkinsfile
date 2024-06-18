@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        CONTAINER_NAME = "my_wordpress"
+        CONTAINER_NAME = "myapp"
         DATABASE_NAME = "wordpress"
         DATABASE_PASSWORD = "password"
         DATABASE_ROOT_PASSWORD = "root_password"
@@ -23,7 +23,8 @@ pipeline {
                     // Xây dựng và triển khai bằng Docker Compose
                     bat 'docker-compose down'
                     bat 'docker-compose pull'
-                    bat 'docker-compose up -d --build'
+                    // Chỉ khởi động lại dịch vụ WordPress
+                    bat 'docker-compose up -d --no-deps wordpress'
                 }
             }
         }
