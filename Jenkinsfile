@@ -24,7 +24,7 @@ pipeline {
                     bat 'docker-compose down'
                     bat 'docker-compose pull'
                     // Chỉ khởi động lại dịch vụ WordPress
-                    bat 'docker-compose up -d --no-deps wordpress'
+                    bat 'docker-compose up -d --build'
                 }
             }
         }
