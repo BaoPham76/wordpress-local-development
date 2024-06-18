@@ -13,7 +13,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Lấy mã nguồn từ repository
-                git credentialsId: '938e6ad1-045b-4eee-a581-a5c12e67a672', url: 'https://github.com/BaoPham76/BShop.git', branch: 'main'
+                git credentialsId: '938e6ad1-045b-4eee-a581-a5c12e67a672', url: 'https://github.com/BaoPham76/wordpress-local-development.git', branch: 'main'
             }
         }
 
