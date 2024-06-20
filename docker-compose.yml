@@ -70,7 +70,7 @@ services:
     volumes:
       - wordpress:/var/www/html
       #- ./src:/var/www/html/wp-content:rw
-
+      
     networks:
       - internal
 volumes:
